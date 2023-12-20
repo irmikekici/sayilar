@@ -1,0 +1,36 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int buyukolan(int x,int y){
+	if (x>y){
+		return 1;
+	}
+	else if(x<y){
+		return 0;
+	}
+	else{
+	    return 2;
+	}
+}
+
+
+
+
+
+int main(){
+	int a,b;
+	int sonuc;
+	printf("Lutfen 2 adet sayi giriniz\n");
+	scanf("%d%d",&a,&b);
+	sonuc=buyukolan(a,b);
+	if(sonuc==1){
+		printf("%d %d den buyuktur",a,b);
+	}
+	else if(sonuc==0){
+		printf("%d %d den buyuktur",b,a);
+	}
+	else{
+		printf("%d %d ye esittir",a,b);
+	}
+	return 0;
+}
