@@ -1,0 +1,21 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+void bolumislemi(int bolunen,int bolen)
+{
+	int kalan,bolum;
+	kalan=bolunen%bolen;
+	bolum=bolunen/bolen;
+	printf("Kalan = %d\n",kalan);
+	printf("Bolum = %d",bolum);
+}
+int main()
+{
+	int a,b;
+	printf("Lutfen bolmek istediginiz sayiyi giriniz\n");
+	scanf("%d",&a);
+	printf("Lutfen hangi sayiya bolmek istediginizi giriniz\n");
+	scanf("%d",&b);
+	bolumislemi(a,b);
+	return 0;
+}
