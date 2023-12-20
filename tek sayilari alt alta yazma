@@ -1,0 +1,24 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+void deger(int a)
+{
+	int i=0;
+	while(i<=a)
+	{
+		if(i%2==1)
+		{
+			printf("%d\n",i);
+		}
+		i++;
+	}
+}
+
+int main()
+{
+	int n;
+	printf("Lutfen pozitif bir sayi giriniz:\n");
+	scanf("%d",&n);
+	deger(n);
+	return 0;
+}
